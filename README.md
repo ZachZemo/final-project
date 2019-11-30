@@ -44,15 +44,12 @@ To further visualize the correlation, I created a pairsplot.
 
 ### Results
 
-The performance of the regressor was an R^2 value of 0.661. The figure below shows the performance on the testing set.
-
-
-We can see that in general, our regressor seems to underestimate our edgeweights. In cases where the connections are small, the regressor performs quite well, though in cases where the strength is higher we notice that the
-performance tends to degrade.
+The relationship between Flavanoids and Total Phenols is the strongest in the wine dataset. With a score of .86/1, it is the highest correlation than any other feature/feature relationship by a margin of nearly 10%.
+This heatmap correlation result is corroberated by some visualization done, using boxplots and pairs plots, which further displayed the strong relationship between the two. 
 
 ### Discussion
 
-The method used here does not solve the problem of identifying the strength of connection between two brain regions from looking at the surrounding regions. This method shows that a relationship may be learnable between these features, but performance suffers when the connection strength is towards the extreme range of observed values. To improve this, I would potentially perform dimensionality reduction, such as PCA, to try and compress the data into a more easily learnable range.
+Under the assumption that Flavanoids are responsible for the colour of the wine and Total Phenols are responsible for the taste and "mouthfeel" of the wine, is it safe to assume that the more intense the colour then so too the taste? More extensive data is needed. Sommeliers beware!
 
 ### References
 The links here were useful in guiding my analysis:
