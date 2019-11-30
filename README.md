@@ -38,6 +38,9 @@ Once I had identified that Flavanoids and Total Phenols were the most closely re
 ![Total Phenols](/fplots/seaborn_heatmap/wine-TotalPhenols.png)
 ![Flavanoids](/fplots/seaborn_heatmap/wine-boxplot-flavanoids.png)
 
+To further visualize the correlation, I created a pairsplot.
+
+![Pairsplot](/fplots/seaborn_heatmap/pairs.png)
 
 ### Results
 
