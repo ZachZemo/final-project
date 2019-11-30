@@ -8,20 +8,24 @@
 
 ## Research Question
 
-Based on the connectivity between two brain regions in one hemisphere, can we predict the connectivity between the same regions in the other hemisphere?
+Given the correlation between features of the Wine dataset in sklearn, what relationships can we determine between them and how can they help us describe the dataset. 
 
 ### Abstract
 
-Derived from Diffusion-Weighted Magnetic Resonance Imaging (DWI, d-MRI), we have derived "maps" of structural connectivity between brain regions.
-Using these data, we may be able to understand relationships between brain regions and their relative connectivity, which can then be used for targetted interventions in neurodegenerative diseases.
-Here, we tried to predict the connectivity between two unique brain regions based on all other known brain connectivity maps.
-Based on the preliminary performance of this regressor, we found that the current model didn't provide consistent performance, but shows promise for success with more sophisticated methods.
+The wine dataset gives us the opportunity to better classify wines based on a variety of features, such as magnesium levels, alcohol %, flavanoids, phenols etc., in order to draw deeper conclusions than simply the year and region it is produced in. 
+By utilizing 2 dimensional graphing and visualization in matplotlib and seaborn, we can identify key relationships that will give us deeper understanding of wine. 
+The relation between flavanoids(colour) and total phenols (there are over 6000 different kinds in structure, and is associated to taste, colour and mouthfeel) has a very high correlation.
 
 
 ### Introduction
 
-The graphs used are structural "connectomes" from the publicly available BNU1 dataset([https://neurodata.io/mri-cloud/](https://neurodata.io/mri-cloud/)), processed by Greg Kiar using the ndmg software library [https://github.com/neurodata/ndmg](https://github.com/neurodata/ndmg).
-The graphs used here are only a subset of those in the dataset, and in particular only include several of the edges pertaining to the hippocampus and entorhinal cortex for both the left and right hemispheres. 
+The wine dataset was collected in the 1990's in Genoa Italy by the Institure of Pharmaceutical and Food Analysis and Technologies. 
+The dataset consists of 13 features for wines, identified through chemical analysis, that come from 3 different regions in Genoa, Italy. 
+When originally collected there were around 30 features recorded but were then condensed. 
+Number of instances recorded per class(region):
+class 1: 59
+class 2: 71
+class 3: 48
 
 ### Methods
 
@@ -32,7 +36,7 @@ This method was chosen because of its simplicity.
 
 The data itself was organized into a matrix, and all connections between brain regions with available data were sorted, and then transformed into a table. We attempted to predict the connection found at location 12 in the figure below, from all other connections.
 
-![matrix](./figures/average_graph.png)
+![Heatmap](C:\Users\zachz\plots\seaborn_heatmap)
 
 ### Results
 
