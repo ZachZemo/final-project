@@ -151,3 +151,14 @@ plt.xlim(-500, 500)
 plt.tight_layout(rect=(0, 0, 1.2, 1.2))
 plt.show()
 
+cols = ['flavanoids', 'total_phenols']
+pp = sns.pairplot(wine_df[cols], size=1.8, aspect=1.8,
+                  plot_kws=dict(edgecolor="k", linewidth=0.5),
+                  diag_kind="kde", diag_kws=dict(shade=True))
+
+fig = pp.fig
+fig.subplots_adjust(top=0.93, wspace=0.3)
+t = fig.suptitle('Wine Attributes Pairwise Plots', fontsize=14)
+plt.savefig('fplots/seaborn_heatmap/pairs.png')
+
+
