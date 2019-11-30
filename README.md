@@ -29,20 +29,21 @@ class 3: 48
 
 ### Methods
 
-The method used for modelling this data was the Ridge Regressor built into scikit-learn.
-Pseudocode (and in particular, the objective function being minimized) can be found [here](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html).
-Simply put, this objective function minimizes the linear least squares function between predicted and expected value, while being regularized by the L2 norm of the estimated weight matrix.
-This method was chosen because of its simplicity.
-
-The data itself was organized into a matrix, and all connections between brain regions with available data were sorted, and then transformed into a table. We attempted to predict the connection found at location 12 in the figure below, from all other connections.
+Using the matplotlib and seaborn libraries, I created a heatmap of the wine dataset, which displayed the correlation between each feature of the dataset. 
 
 ![Heatmap](/fplots/seaborn_heatmap/wine_heatmap.png)
+
+Once I had identified that Flavanoids and Total Phenols were the most closely related features of this dataset, I created some boxplots to better represent this data visually.
+
+![Total Phenols](/fplots/seaborn_heatmap/wine-TotalPhenols.png)
+![Flavanoids](/fplots/seaborn_heatmap/wine-boxplot-flavanoids.png)
+
 
 ### Results
 
 The performance of the regressor was an R^2 value of 0.661. The figure below shows the performance on the testing set.
 
-![performange figure](./figures/performance.png)
+![Heatmap](/fplots/seaborn_heatmap/wine_heatmap.png)
 
 We can see that in general, our regressor seems to underestimate our edgeweights. In cases where the connections are small, the regressor performs quite well, though in cases where the strength is higher we notice that the
 performance tends to degrade.
