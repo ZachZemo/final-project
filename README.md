@@ -70,7 +70,9 @@ This heatmap correlation result is corroberated by some visualization done, usin
 
 ### Discussion
 
-Under the assumption that Flavanoids are responsible for the colour of the wine and Total Phenols are responsible for the taste and "mouthfeel" of the wine, is it safe to assume that the more intense the colour then so too the taste? More extensive data is needed. Sommeliers beware!
+Under the assumption that Flavanoids are responsible for the colour of the wine and Total Phenols are responsible for the taste and "mouthfeel" of the wine, is it safe to assume that the more intense the colour then so too the taste? More extensive data is needed. 
+
+![KMeans Class](/plots/wine_cluster/actual-predicted-main.png)
 
 ### References
 The links here were useful in guiding my analysis:
