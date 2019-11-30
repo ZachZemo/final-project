@@ -36,7 +36,7 @@ This method was chosen because of its simplicity.
 
 The data itself was organized into a matrix, and all connections between brain regions with available data were sorted, and then transformed into a table. We attempted to predict the connection found at location 12 in the figure below, from all other connections.
 
-![Heatmap](C:\Users\zachz\plots\seaborn_heatmap)
+![Heatmap](final-project\fplots\seaborn_heatmap)
 
 ### Results
 
