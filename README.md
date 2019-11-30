@@ -23,8 +23,11 @@ The wine dataset was collected in the 1990's in Genoa Italy by the Institure of 
 The dataset consists of 13 features for wines, identified through chemical analysis, that come from 3 different regions in Genoa, Italy. 
 When originally collected there were around 30 features recorded but were then condensed. 
 Number of instances recorded per class(region):
+
 class 1: 59
+
 class 2: 71
+
 class 3: 48
 
 ### Methods
