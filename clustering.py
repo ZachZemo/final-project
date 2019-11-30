@@ -14,10 +14,10 @@ os.makedirs('plots/wine_cluster', exist_ok=True)
 
 
 wine = load_wine()
-#iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
+
 column_names = wine.feature_names
 
-#print(iris_df)
+
 
 y = wine.target
 X = wine.data
