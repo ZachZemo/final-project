@@ -8,37 +8,41 @@
 
 ## Research Question
 
-Based on the connectivity between two brain regions in one hemisphere, can we predict the connectivity between the same regions in the other hemisphere?
+Given the correlation between features of the Wine dataset in sklearn, what relationships can we determine between them and how can they help us describe the dataset. 
 
 ### Abstract
 
-Derived from Diffusion-Weighted Magnetic Resonance Imaging (DWI, d-MRI), we have derived "maps" of structural connectivity between brain regions.
-Using these data, we may be able to understand relationships between brain regions and their relative connectivity, which can then be used for targetted interventions in neurodegenerative diseases.
-Here, we tried to predict the connectivity between two unique brain regions based on all other known brain connectivity maps.
-Based on the preliminary performance of this regressor, we found that the current model didn't provide consistent performance, but shows promise for success with more sophisticated methods.
+The wine dataset gives us the opportunity to better classify wines based on a variety of features, such as magnesium levels, alcohol %, flavanoids, phenols etc., in order to draw deeper conclusions than simply the year and region it is produced in. 
+By utilizing 2 dimensional graphing and visualization in matplotlib and seaborn, we can identify key relationships that will give us deeper understanding of wine. 
+The relation between flavanoids(colour) and total phenols (there are over 6000 different kinds in structure, and is associated to taste, colour and mouthfeel) has a very high correlation.
 
 
 ### Introduction
 
-The graphs used are structural "connectomes" from the publicly available BNU1 dataset([https://neurodata.io/mri-cloud/](https://neurodata.io/mri-cloud/)), processed by Greg Kiar using the ndmg software library [https://github.com/neurodata/ndmg](https://github.com/neurodata/ndmg).
-The graphs used here are only a subset of those in the dataset, and in particular only include several of the edges pertaining to the hippocampus and entorhinal cortex for both the left and right hemispheres. 
+The wine dataset was collected in the 1990's in Genoa Italy by the Institure of Pharmaceutical and Food Analysis and Technologies. 
+The dataset consists of 13 features for wines, identified through chemical analysis, that come from 3 different regions in Genoa, Italy. 
+When originally collected there were around 30 features recorded but were then condensed. 
+Number of instances recorded per class(region):
+class 1: 59
+class 2: 71
+class 3: 48
 
 ### Methods
 
-The method used for modelling this data was the Ridge Regressor built into scikit-learn.
-Pseudocode (and in particular, the objective function being minimized) can be found [here](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html).
-Simply put, this objective function minimizes the linear least squares function between predicted and expected value, while being regularized by the L2 norm of the estimated weight matrix.
-This method was chosen because of its simplicity.
+Using the matplotlib and seaborn libraries, I created a heatmap of the wine dataset, which displayed the correlation between each feature of the dataset. 
 
-The data itself was organized into a matrix, and all connections between brain regions with available data were sorted, and then transformed into a table. We attempted to predict the connection found at location 12 in the figure below, from all other connections.
+![Heatmap](/fplots/seaborn_heatmap/wine_heatmap.png)
 
-![matrix](./figures/average_graph.png)
+Once I had identified that Flavanoids and Total Phenols were the most closely related features of this dataset, I created some boxplots to better represent this data visually.
+
+![Total Phenols](/fplots/seaborn_heatmap/wine-TotalPhenols.png)
+![Flavanoids](/fplots/seaborn_heatmap/wine-boxplot-flavanoids.png)
+
 
 ### Results
 
 The performance of the regressor was an R^2 value of 0.661. The figure below shows the performance on the testing set.
 
-![performange figure](./figures/performance.png)
 
 We can see that in general, our regressor seems to underestimate our edgeweights. In cases where the connections are small, the regressor performs quite well, though in cases where the strength is higher we notice that the
 performance tends to degrade.
@@ -48,6 +52,9 @@ performance tends to degrade.
 The method used here does not solve the problem of identifying the strength of connection between two brain regions from looking at the surrounding regions. This method shows that a relationship may be learnable between these features, but performance suffers when the connection strength is towards the extreme range of observed values. To improve this, I would potentially perform dimensionality reduction, such as PCA, to try and compress the data into a more easily learnable range.
 
 ### References
-The links referenced were included in my discussion, above.
+The links here were useful in guiding my analysis:
+https://towardsdatascience.com/the-art-of-effective-visualization-of-multi-dimensional-data-6c7202990c57
+https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html
+https://jonathonbechtel.com/blog/2018/02/06/wines/
 
 -------
