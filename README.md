@@ -20,7 +20,25 @@ The relation between flavanoids(colour) and total phenols (there are over 6000 d
 ### Introduction
 
 The wine dataset was collected in the 1990's in Genoa Italy by the Institure of Pharmaceutical and Food Analysis and Technologies. 
-The dataset consists of 13 features for wines, identified through chemical analysis, that come from 3 different regions in Genoa, Italy. 
+The dataset consists of 13 features for wines:
+
+1) Alcohol
+
+2) Malic acid
+3) Ash
+4) Alcalinity of ash  
+5) Magnesium
+6) Total phenols
+7) Flavanoids
+8) Nonflavanoid phenols
+9) Proanthocyanins
+10)Color intensity
+11)Hue
+12)OD280/OD315 of diluted wines
+13)Proline         
+
+
+These feature were identified through chemical analysis, from 3 different regions in Genoa, Italy. 
 When originally collected there were around 30 features recorded but were then condensed. 
 Number of instances recorded per class(region):
 
