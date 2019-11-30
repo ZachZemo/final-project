@@ -64,5 +64,5 @@ axes[0].tick_params(direction='in', length=10, width=5, colors='k', labelsize=20
 axes[1].tick_params(direction='in', length=10, width=5, colors='k', labelsize=20)
 axes[0].set_title('Actual', fontsize=18)
 axes[1].set_title('Predicted', fontsize=18)
-plt.savefig('plots/wine_cluster/actual-predicted')
+plt.savefig('plots/wine_cluster/actual-predicted-main.png')
 plt.close()
