@@ -32,10 +32,10 @@ The dataset consists of 13 features for wines:
 7) Flavanoids
 8) Nonflavanoid phenols
 9) Proanthocyanins
-10)Color intensity
-11)Hue
-12)OD280/OD315 of diluted wines
-13)Proline         
+10) Color intensity
+11) Hue
+12) OD280/OD315 of diluted wines
+13) Proline         
 
 
 These feature were identified through chemical analysis, from 3 different regions in Genoa, Italy. 
