@@ -43,7 +43,6 @@ Once I had identified that Flavanoids and Total Phenols were the most closely re
 
 The performance of the regressor was an R^2 value of 0.661. The figure below shows the performance on the testing set.
 
-![Heatmap](/fplots/seaborn_heatmap/wine_heatmap.png)
 
 We can see that in general, our regressor seems to underestimate our edgeweights. In cases where the connections are small, the regressor performs quite well, though in cases where the strength is higher we notice that the
 performance tends to degrade.
@@ -53,6 +52,9 @@ performance tends to degrade.
 The method used here does not solve the problem of identifying the strength of connection between two brain regions from looking at the surrounding regions. This method shows that a relationship may be learnable between these features, but performance suffers when the connection strength is towards the extreme range of observed values. To improve this, I would potentially perform dimensionality reduction, such as PCA, to try and compress the data into a more easily learnable range.
 
 ### References
-The links referenced were included in my discussion, above.
+The links here were useful in guiding my analysis:
+https://towardsdatascience.com/the-art-of-effective-visualization-of-multi-dimensional-data-6c7202990c57
+https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html
+https://jonathonbechtel.com/blog/2018/02/06/wines/
 
 -------
