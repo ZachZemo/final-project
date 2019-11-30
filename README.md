@@ -8,7 +8,7 @@
 
 ## Research Question
 
-Given the correlation between features of the Wine dataset in sklearn, what relationships can we determine between them and how can they help us describe the dataset. 
+Can the wine dataset and the information it contains offer a better way to decribe wines other than the traditional criteria we use today such as alcohol%, region it was made in or type of grape. 
 
 ### Abstract
 
