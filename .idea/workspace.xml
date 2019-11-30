@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9853da2-a2f0-47d3-a322-f3fdbd438b87" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solving.py" beforeDir="false" afterPath="$PROJECT_DIR$/solving.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/clustering.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.solving">
+  <component name="RunManager" selected="Python.clustering">
     <configuration name="clustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="final-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,10 +70,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.solving" />
-        <item itemvalue="Python.solving" />
         <item itemvalue="Python.clustering" />
         <item itemvalue="Python.clustering" />
+        <item itemvalue="Python.solving" />
+        <item itemvalue="Python.solving" />
         <item itemvalue="Python.clustering" />
       </list>
     </recent_temporary>

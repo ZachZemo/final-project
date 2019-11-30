@@ -44,8 +44,8 @@ plt.close()
 
 
 plt.scatter(X[:,0], X[:,1], c=y, cmap='rainbow')
-plt.xlabel('Spea1 Length', fontsize=15)
-plt.ylabel('Sepal Width', fontsize=15)
+plt.xlabel('Flavanoids', fontsize=15)
+plt.ylabel('Total Phenols', fontsize=15)
 #plt.show()
 
 
@@ -56,10 +56,10 @@ new_labels = km.labels_
 fig, axes = plt.subplots(1, 2, figsize=(16,8))
 axes[0].scatter(X[:, 0], X[:, 1], c=y, cmap='gist_rainbow',edgecolor='k', s=150)
 axes[1].scatter(X[:, 0], X[:, 1], c=new_labels, cmap='flag',edgecolor='k', s=150)
-axes[0].set_xlabel('Sepal length', fontsize=18)
-axes[0].set_ylabel('Sepal width', fontsize=18)
-axes[1].set_xlabel('Sepal length', fontsize=18)
-axes[1].set_ylabel('Sepal width', fontsize=18)
+axes[0].set_xlabel('Flavanoids', fontsize=18)
+axes[0].set_ylabel('Total Phenols', fontsize=18)
+axes[1].set_xlabel('Flavanoids', fontsize=18)
+axes[1].set_ylabel('Total Phenols', fontsize=18)
 axes[0].tick_params(direction='in', length=10, width=5, colors='k', labelsize=20)
 axes[1].tick_params(direction='in', length=10, width=5, colors='k', labelsize=20)
 axes[0].set_title('Actual', fontsize=18)
